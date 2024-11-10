@@ -1,0 +1,42 @@
+  header,
+  footer {
+    padding: 5%;
+    color: bisque;
+    background-color: #333;
+    clear:left;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px;
+    background-color: bisque;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .wrapper {
+    display:flex;
+  }
+  
+  .wrapper > div {
+    flex: 1;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+  }
