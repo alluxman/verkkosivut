@@ -32,7 +32,7 @@ body {
     font-weight: bold;
     text-align: center;
   }
-  
+
   .shadow-text {
     font-size: 2em;
     color: darkblue;
@@ -74,4 +74,21 @@ body {
     font-size: 1.2em;
   }
   
-  /* lisää tänne tehtävä 4 button muotoilut*/
+  /* button style */
+  .custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-size: 110%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
