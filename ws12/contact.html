@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuotteemme</title>
+    <title>Yhteystiedot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -51,20 +51,34 @@
     
         <!-- Основной контент -->
         <main>
-            <section id="products">
-                <h2>Meidän Tuotteet</h2>
-                <p>Meiltä löydät laajan valikoiman käytettyjä tuotteita eri kategorioista. Kaikki tuotteet on tarkistettu ja ne ovat hyvässä kunnossa. Meiltä löydät:</p>
-                <ul>
-                    <li><strong>Huonekalut</strong>: Sohvat, tuolit, pöydät, kaapit ja paljon muuta - kaikki hyvin huollettuja ja valmiita uudelle omistajalle.</li>
-                    <li><strong>Vaatteet</strong>: Muotitietoista, käytettyä vaatetusta kaikille tyyleille ja kokoille.</li>
-                    <li><strong>Elektroniikka</strong>: Käytetyt puhelimet, tietokoneet, televisiot ja muut laitteet, jotka ovat täysin toimintakuntoisia.</li>
-                    <li><strong>Kodinkoneet</strong>: Pesukoneet, jääkaapit, mikroaaltouunit ja muut kodinkoneet, jotka ovat edelleen tehokkaita ja luotettavia.</li>
-                </ul>
-                <a href="products.html" class="btn btn-primary">Tutustu tuotteisiimme</a>
-
+            <section id="contact" class="bg-light">
+                <div class="container">
+                    <h2>Ota yhteyttä</h2>
+                    <p>Jos sinulla on kysyttävää tuotteistamme, tilaamisesta tai haluat tehdä palautteen, ota yhteyttä! Autamme mielellämme.</p>
+                    <ul>
+                        <li><strong>Sähköposti:</strong> info@kierratysmyynti.fi</li>
+                        <li><strong>Puhelin:</strong> +358 123 456 789</li>
+                        <li><strong>Osoite:</strong> Esimerkki 1, 00100 Helsinki, Suomi</li>
+                    </ul>
+                    <form action="submit_form.php" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nimi:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Sähköposti:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Viesti:</label>
+                            <textarea class="form-control" id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Lähetä</button>
+                    </form>
+                </div>
             </section>
         </main>
-        
+    
         <!-- Подвал -->
         <footer>
             <p>&copy; 2024 Kierrätysmyynti - Kaikki oikeudet pidätetään.</p>
