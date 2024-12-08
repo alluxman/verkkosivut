@@ -1,36 +1,114 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: #333333;
     margin: 0;
     padding: 0;
-}
+    background-color: #f7f7f7;
+    background-image: url('../images/taustakuva.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-nav {
-    background-color: #007bff;
-    padding: 1rem;
-}
-
-nav a {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "nav aside"
+      "footer footer";
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  header {
+    grid-area: header;
+    background: #4a90e2;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
     color: white;
-    padding: 10px 20px;
+  }
+  
+  nav {
+    grid-area: nav;
+    background: #7fbf7f;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  nav a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    padding: 10px 0;
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    background-color: #4a90e2;
 }
 
-.container {
-    margin-top: 20px;
-}
-
-.footer {
-    background-color: #222;
-    color: white;
+  main {
+    grid-area: main;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  aside {
+    grid-area: aside;
+    background: #fff7e6;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  footer {
+    grid-area: footer;
+    background: #f1f1f1;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+        /* Parannuksia responsiivisuuteen */
+        @media (max-width: 768px) {
+            #home h1 {
+                font-size: 1.5rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.25rem;
+            }
+        }
