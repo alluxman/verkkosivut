@@ -31,7 +31,7 @@ body {
   
   header {
     grid-area: header;
-    background: #4a90e2;
+    background: #71d4b5;
     padding: 20px;
     text-align: center;
     font-weight: bold;
@@ -41,21 +41,23 @@ body {
   
   nav {
     grid-area: nav;
-    background: #7fbf7f;
+    background: #71d4b5;
     padding: 20px;
     border-radius: 5px;
   }
 
   nav a {
     color: white;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 10px 0;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #4a90e2;
+    background-color: #566577;
 }
 
   main {
@@ -77,7 +79,7 @@ nav a:hover {
   .btn-primary {
     padding: 10px 20px;
     font-size: 15px;
-    background-color: #4a90e2;
+    background-color: #566577;
     color: white;
     border: none;
     border-radius: 5px;
@@ -88,6 +90,7 @@ nav a:hover {
 
   .btn-primary:hover {
     background-size: 110%;
+    background-color: #566577;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
   }
@@ -102,7 +105,7 @@ nav a:hover {
   }
 
   h1, h2, h3 {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -148,17 +151,58 @@ li {
   color: #333333;
 }
 
-      /* Parannuksia responsiivisuuteen */
-        @media (max-width: 768px) {
-            #home h1 {
-                font-size: 1.5rem;
-            }
 
-            .navbar-brand {
-                font-size: 1.25rem;
-            }
+/* Для мобильных телефонов и небольших экранов */
+@media (max-width: 576px) {
+  body {
+      margin: 0.5rem;  /* Меньше отступы на мобильных */
+      padding: 0.5rem;
+  }
 
-          .carousel-item img {
-              height: 200px; /* Уменьшение высоты изображений на мобильных */
-            }
-        }
+  h1 {
+      font-size: 1.75rem; /* Уменьшаем заголовок */
+  }
+
+  .navbar-brand {
+      font-size: 1.1rem; /* Уменьшаем размер для мобильных */
+  }
+
+  .carousel-item img {
+      height: 200px;  /* Меньше изображения для мобильных */
+  }
+
+  .container {
+      grid-template-areas:
+          "header"
+          "main"
+          "footer";
+      grid-template-columns: 1fr;
+  }
+
+  nav {
+      margin-bottom: 1rem;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 576px) and (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  .carousel-item img {
+      height: 300px;
+  }
+
+  .container {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+          "header header"
+          "nav main"
+          "footer footer";
+  }
+}
