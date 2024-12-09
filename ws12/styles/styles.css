@@ -1,14 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     color: #333333;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 5px;
     background-color: #f7f7f7;
-    background-image: url('../images/taustakuva.webp');
+    background-image: url('../images/tausta_pexels-daiangan-102129.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+ 
+  .navbar {
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
   }
 
   .container {
@@ -102,7 +109,14 @@ li {
   list-style-type: none;
 }
 
-        /* Parannuksia responsiivisuuteen */
+.carousel-item img {
+  color: #333333;
+  width: 100%;               /* Ширина изображения будет равна ширине контейнера */
+  height: 500px;             /* Установите нужную высоту */
+  object-fit: cover;         /* Заполняет контейнер, сохраняя пропорции изображения */
+  object-position: center;   /* Центрирует изображение в контейнере */
+}
+      /* Parannuksia responsiivisuuteen */
         @media (max-width: 768px) {
             #home h1 {
                 font-size: 1.5rem;
@@ -110,5 +124,9 @@ li {
 
             .navbar-brand {
                 font-size: 1.25rem;
+            }
+
+          .carousel-item img {
+              height: 200px; /* Уменьшение высоты изображений на мобильных */
             }
         }

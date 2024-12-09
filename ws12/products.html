@@ -50,20 +50,47 @@
             </ul>
         </nav>
     
-        <!-- Основной контент -->
-        <main>
-            <section id="products">
-                <h2>Meidän Tuotteet</h2>
-                <p>Meiltä löydät laajan valikoiman käytettyjä tuotteita eri kategorioista. Kaikki tuotteet on tarkistettu ja ne ovat hyvässä kunnossa. Meiltä löydät:</p>
-                <ul>
-                    <li><strong>Huonekalut</strong>: Sohvat, tuolit, pöydät, kaapit ja paljon muuta - kaikki hyvin huollettuja ja valmiita uudelle omistajalle.</li>
-                    <li><strong>Vaatteet</strong>: Muotitietoista, käytettyä vaatetusta kaikille tyyleille ja kokoille.</li>
-                    <li><strong>Elektroniikka</strong>: Käytetyt puhelimet, tietokoneet, televisiot ja muut laitteet, jotka ovat täysin toimintakuntoisia.</li>
-                    <li><strong>Kodinkoneet</strong>: Pesukoneet, jääkaapit, mikroaaltouunit ja muut kodinkoneet, jotka ovat edelleen tehokkaita ja luotettavia.</li>
-                </ul>
-                <a href="products.html" class="btn btn-primary">Tutustu tuotteisiimme</a>
+        <!--kuvakaruselli-->
 
-            </section>
+        <main>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/tuote1_pexels-eric-mufasa-578798-1350789.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Huonekalut</h5>
+                      <p>Sohvat, tuolit, pöydät, kaapit ja paljon muuta - kaikki hyvin huollettuja ja valmiita uudelle omistajalle</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/tuote2_pexels-kseniachernaya-3965545.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Vaatteet</h5>
+                      <p>Muotitietoista, käytettyä vaatetusta kaikille tyyleille ja kokoille</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/tuote3_pexels-knownasovan-62689.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Elektroniikka</h5>
+                      <p>Käytetyt puhelimet, tietokoneet, televisiot ja muut laitteet, jotka ovat täysin toimintakuntoisia</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </main>
         
         <!-- Подвал -->
