@@ -73,6 +73,24 @@ nav a:hover {
     border-radius: 5px;
     font-size: 1rem;
   }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-size: 110%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
   
   footer {
     grid-area: footer;
@@ -109,6 +127,11 @@ li {
   list-style-type: none;
 }
 
+.carousel-inner {
+  position: relative;
+  height: auto;
+}
+
 .carousel-item img {
   color: #333333;
   width: 100%;               /* Ширина изображения будет равна ширине контейнера */
@@ -116,6 +139,15 @@ li {
   object-fit: cover;         /* Заполняет контейнер, сохраняя пропорции изображения */
   object-position: center;   /* Центрирует изображение в контейнере */
 }
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #333333;
+}
+
       /* Parannuksia responsiivisuuteen */
         @media (max-width: 768px) {
             #home h1 {
